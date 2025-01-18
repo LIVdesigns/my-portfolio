@@ -94,6 +94,31 @@ html{
     text-align: left;
 }
 
+/* Shared styles */
+.skills-container, .programs {
+    position: absolute;
+    text-align: left;
+    margin-left: -50px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.skills-container {
+    transform: translate(720px, 520px);
+}
+
+
+.programs {
+    transform: translate(1080px, 500px);
+}
+
+.skills {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
 .image1-container {
     display: flex;
     justify-content: flex-end; /* Push content to the right horizontally */
