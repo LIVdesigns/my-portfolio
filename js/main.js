@@ -23,3 +23,4 @@ navLinks.forEach(link => {
         smoother.scrollTo(targetSection, true, "center center");
     });
 });
+
