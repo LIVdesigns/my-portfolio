@@ -237,7 +237,7 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.6);
+    background:#5E6C5B;
     color: #162A2C;
     display: flex;
     justify-content: center;
@@ -262,6 +262,242 @@ html{
     text-align: center;
     padding: 20px;
 }
+
+/* NEW MEDIA */
+#new-media {
+    background: linear-gradient(to right, #162A2C, #0A0F0F);
+    min-height: 700px; 
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Change color for all text in the section */
+#new-media {
+    color: #686867; /* Red */
+}
+
+/* Change color for specific heading */
+.new-media-container h1 {
+    color: #686867; /* Gold */
+}
+
+/* Change color for paragraph text */
+.nm-container p {
+    color: #A8DADC; /* Light Blue */
+}
+
+
+.new-media-container h1, 
+.new-media-container h2 {
+    font-size: 120px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.new-media-container h2 span {
+    color:#D6E0E2; /* Accent color for "Art" */
+    font-style: italic;
+}
+
+.nm-container {
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 1.8;
+    border-left: 4px solid #D6E0E2;
+    padding-left: 30px;
+    opacity: 0.9;
+}
+
+/* Styling for the 'Back to Home' button */
+a button {
+    background-color:#686867; 
+    color: white; /* White text */
+    padding: 5px 10px; /* Padding for the button */
+    text-align: center; /* Center text inside the button */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background-color */
+}
+
+/* Hover effect for the button */
+a button:hover {
+    background-color:#162A2C ; /* Darker green on hover */
+}
+
+
+/* GALLERY SECTION */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    padding: 50px 5%;
+    background-color: #686867;
+    position: relative;
+}
+
+.art-piece {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    filter: grayscale(20%) contrast(1.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* HOVER EFFECTS */
+.art-piece:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+    .new-media-container h1, .new-media-container h2 {
+        font-size: 80px;
+    }
+
+    .nm-container {
+        max-width: 100%;
+    }
+
+    #gallery {
+        gap: 15px;
+    }
+
+    .art-piece {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    #new-media {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .new-media-container h1, .new-media-container h2 {
+        font-size: 60px;
+    }
+
+    .nm-container {
+        font-size: 18px;
+    }
+
+    .art-piece {
+        flex: 1 1 100%;
+    }
+}
+
+/* I LOVE THEM */
+#ilovethem {
+    background: linear-gradient(to left, #407b81, #F4EFE6);
+    min-height: 700px;
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Change color for specific heading */
+.ilovethem-container h1 {
+    color: #162A2C; /* Dark color */
+}
+
+/* Change color for paragraph text */
+.ilovethem-content p {
+    color: #000000; /* Black */
+    text-align: center; /* Center the paragraph text */
+}
+
+/* Title styling */
+.ilovethem-container h1,
+.ilovethem-container h2 {
+    font-size: 120px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling for paragraph content */
+.ilovethem-content {
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 1.8;
+    border-left: 4px solid #407b81;
+    padding-left: 30px;
+    opacity: 0.9;
+    text-align: center; /* Center align the paragraph */
+}
+
+/* Styling for the 'Back to Home' button */
+.button-container {
+    text-align: center; /* Ensure the button is centered */
+    margin-top: 20px; /* Space between the paragraph and button */
+}
+
+.back-button {
+    background-color: #686867;
+    color: white; /* White text */
+    padding: 10px 20px; /* Increased padding for the button */
+    text-align: center; /* Center text inside the button */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background-color */
+}
+
+/* Hover effect for the button */
+.back-button:hover {
+    background-color: #162A2C; /* Darker green on hover */
+}
+
+/* Image styling */
+.image-container {
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center the image container */
+    align-items: center;
+}
+
+.image-container img {
+    width: 800px; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Slightly bigger on hover */
+}
+
+
+
 
 
 #contact{
