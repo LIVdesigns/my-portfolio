@@ -496,30 +496,33 @@ a button:hover {
     transform: scale(1.1); /* Slightly bigger on hover */
 }
 
-/* General Reset */
-
+/* SJDT GRAPHICS */
 
 /* Flexbox container for the sections */
 #sjdt {
-    height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Top Half of the Screen */
+/* Top Half Section */
 .top-half {
-    height: 50vh; /* Top half */
+    height: auto; /* Allow content to dictate height */
+    padding: 100px 5%;
     background: radial-gradient(circle, #5E6C5B, #F4EFE6);
     background-size: 200% 200%;
     animation: animateBg 8s infinite alternate ease-in-out;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 5%;
 }
 
-/* Animated gradient background effect */
+/* Bottom Half Section */
+.bottom-half {
+    padding: 50px 5%;
+    background-color: #F4EFE6;
+}
+
+/* Animated Gradient Background */
 @keyframes animateBg {
     0% {
         background-position: 0% 0%;
@@ -532,14 +535,23 @@ a button:hover {
     }
 }
 
-/* Bottom Half of the Screen */
-.bottom-half {
-    height: 50vh; /* Bottom half */
-    background-color: #F4EFE6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Gap between images */
+    width: 100%; /* Stretches gallery across the container */
 }
+
+/* Image styles */
+.gallery img {
+    width: 100%; /* Makes the image fill the column width */
+    height: auto; /* Maintains aspect ratio */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 
 
