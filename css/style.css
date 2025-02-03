@@ -601,7 +601,40 @@ Header Styling
     margin-top: 0.5rem;
 }
 
+/* FINE ART */
 
+#fine-art{
+    display: flex;
+    flex-direction: column;
+}
+
+.fine-art-header {
+    font-size: 3.5rem;
+    color: #F4EFE6;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.fa-top-half{
+    height: auto; /* Allow content to dictate height */
+    padding: 100px 5%;
+    background: radial-gradient(circle, #686867, #F4EFE6);
+    background-size: 200% 200%;
+    animation: animateBg 8s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fa-bottom-half{
+    padding: 50px 5%;
+    background-color: #F4EFE6;
+}
+
+/* POKER HTML */
 
 
 
