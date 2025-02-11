@@ -609,13 +609,24 @@ Header Styling
 }
 
 .fine-art-header {
-    font-size: 3.5rem;
+    font-size: 120px;
     color: #F4EFE6;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
+    text-decoration: overline underline;
+    text-decoration-thickness: 3px;
 }
+
+/* Paragraph Styling */
+.fine-art-description {
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
 
 .fa-top-half{
     height: auto; /* Allow content to dictate height */
@@ -635,6 +646,47 @@ Header Styling
 }
 
 /* POKER HTML */
+#poker{
+    display: flex;
+    flex-direction: column;
+}
+
+.fine-art-header {
+    font-size: 120px;
+    color: #F4EFE6;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-decoration: overline underline;
+    text-decoration-thickness: 3px;
+}
+
+/* Paragraph Styling */
+.fine-art-description {
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+
+.fa-top-half{
+    height: auto; /* Allow content to dictate height */
+    padding: 100px 5%;
+    background: radial-gradient(circle, #686867, #F4EFE6);
+    background-size: 200% 200%;
+    animation: animateBg 8s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fa-bottom-half{
+    padding: 50px 5%;
+    background-color: #F4EFE6;
+}
 
 
 
