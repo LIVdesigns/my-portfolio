@@ -36,6 +36,7 @@ html{
     height: 700px;
 }
 
+
 #home{
     background-color:#373737;
     color:#F4EFE6;
@@ -94,7 +95,7 @@ html{
     text-align: left;
 }
 
-/* Shared styles */
+
 .skills-container, .programs {
     position: absolute;
     text-align: left;
@@ -104,12 +105,12 @@ html{
 }
 
 .skills-container {
-    transform: translate(720px, 520px);
+    transform: translate(800px, 520px);
 }
 
 
 .programs {
-    transform: translate(1080px, 500px);
+    transform: translate(1150px, 500px);
 }
 
 .skills {
@@ -166,6 +167,7 @@ html{
 }
 
 /* Style for the works section */
+
 #works {
     background-color: #5E6C5B;
     box-sizing: border-box;
@@ -175,37 +177,33 @@ html{
     text-align: center;
     height: 100vh;
     min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers the content vertically */
+    align-items: center;      /* Centers the content horizontally */
 }
 
-/* Section title */
-/* Style for the works section */
-#works {
-    background-color: #5E6C5B;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 50px 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    height: 100vh;
-    min-height: 700px;
-}
-
-/* Section title */
-#works h1 {
+/* Title Styling */
+/* .works-title {
     color: #fff;
     font-size: 36px;
-    margin-bottom: 40px;
-}
+    margin-bottom: 15px;
+    margin-top: 15px;
+} */
 
-/* Portfolio grid container */
+/* Portfolio Grid */
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Adds spacing between items */
     width: 80%;
-    height: 80%;
     margin: 0 auto;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
 }
+
+
+
 
 /* Each work item */
 .item {
@@ -216,7 +214,10 @@ html{
     width: 100%;
     height: 100%;
     border-radius: 0; /* No curve */
+    max-width: 400px;
 }
+
+
 
 .item img {
     width: 100%;
@@ -651,19 +652,19 @@ Header Styling
     flex-direction: column;
 }
 
-.fine-art-header {
+.poker-header {
     font-size: 120px;
     color: #F4EFE6;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
-    text-decoration: overline underline;
+    text-decoration: underline;
     text-decoration-thickness: 3px;
 }
 
 /* Paragraph Styling */
-.fine-art-description {
+.poker-description {
     font-size: 1.2rem;
     color: #000000;
     max-width: 500px;
@@ -671,10 +672,10 @@ Header Styling
 }
 
 
-.fa-top-half{
+.poker-top-half{
     height: auto; /* Allow content to dictate height */
     padding: 100px 5%;
-    background: radial-gradient(circle, #686867, #F4EFE6);
+    background: radial-gradient(circle, #162A2C, #F4EFE6);
     background-size: 200% 200%;
     animation: animateBg 8s infinite alternate ease-in-out;
     display: flex;
@@ -683,12 +684,89 @@ Header Styling
 
 }
 
-.fa-bottom-half{
+
+
+.poker-bottom-half{
     padding: 50px 5%;
-    background-color: #F4EFE6;
+    background-color: #686867;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-wrapper p {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.image-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 24px;
+    color: #222;
+}
+
+/* Book Mockup Styling */
+.book-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Creates space between book images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 40px;
+}
+
+.book-wrapper {
+    flex: 1; /* Each book takes equal space */
+    max-width: 45%; /* Limits max size */
+    text-align: center;
+}
+
+.book-wrapper img {
+    width: 100%; /* Makes image fill the wrapper */
+    max-width: 800px; /* Ensures images don’t get too large */
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.book-wrapper p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
 }
 
 
+/* COOKBOOK HTML */
+.cookbook-top-half{
+    height: auto; 
+    padding: 100px 5%;
+    background: radial-gradient(circle, #D6E0E2, #162A2C);
+    background-size: 200% 200%;
+    animation: animateBg 8s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cookbook-header {
+    font-size: 90px;
+    color: #F4EFE6;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
 
 #contact{
     background-color:#162A2C;
