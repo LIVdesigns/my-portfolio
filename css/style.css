@@ -89,7 +89,7 @@ html{
     bottom: 0;
     left: 130px;
     transform: translateX(30%);
-    transform: translateY(250%);
+    transform: translateY(200%);
     width: 30%;
     max-width: 1200px;
     text-align: left;
@@ -158,12 +158,16 @@ html{
 
 
 #about h1{
-    font-size: 150px;
+    font-size: 160px;
+    transform: translateY(25%);
+    /* transform: translateX(20%); */
     
 }
 
 #about h2{
-    font-size: 100px;
+    font-size: 175px;
+    transform: translateX(27%);
+    /* transform: translateY(100%); */
 }
 
 /* Style for the works section */
@@ -279,17 +283,17 @@ html{
 
 /* Change color for all text in the section */
 #new-media {
-    color: #686867; /* Red */
+    color: #686867; 
 }
 
 /* Change color for specific heading */
 .new-media-container h1 {
-    color: #686867; /* Gold */
+    color: #686867; 
 }
 
 /* Change color for paragraph text */
 .nm-container p {
-    color: #A8DADC; /* Light Blue */
+    color: #A8DADC; /
 }
 
 
@@ -666,7 +670,7 @@ Header Styling
 /* Paragraph Styling */
 .poker-description {
     font-size: 1.2rem;
-    color: #000000;
+    color: #ffffff;
     max-width: 500px;
     line-height: 1.5;
 }
@@ -759,6 +763,13 @@ h2 {
 
 }
 
+.cookbook-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
 .cookbook-header {
     font-size: 90px;
     color: #F4EFE6;
@@ -800,7 +811,111 @@ h2 {
 
 
 
-#contact{
+/* #contact{
     background-color:#162A2C;
     height: 400px;
-}
+} */
+
+#contact {
+    background-color: #162A2C;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* instead of center */
+    padding: 40px 20px 20px 20px; /* more top padding */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .connect{
+    color:#F4EFE6
+
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    animation: grow 1s ease-in-out forwards;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Button styling */
+  .contact-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-btn:hover {
+    background-color: #ffffff;
+    color: #162A2C;
+    box-shadow: 0 0 15px #ffffffaa;
+    transform: scale(1.05);
+  }
+  
+  /* Different platform hover colors */
+  .linkedin:hover {
+    background-color: #0A66C2;
+    color: #ffffff;
+  }
+  
+  .instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #ffffff;
+  }
+  
+  .facebook:hover {
+    background-color: #1877F2;
+    color: #ffffff;
+  }
+  
+  .email:hover {
+    background-color: #34a853;
+    color: #ffffff;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes grow {
+    from { width: 0; }
+    to { width: 60px; }
+  }
+  
