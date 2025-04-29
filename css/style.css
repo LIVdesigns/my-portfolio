@@ -61,12 +61,23 @@ html{
 }
 
 .port {
-    font-size: 20px;
+    font-size: 23px;
     position: absolute; 
             top: 0;
             left: 0;
             margin: 10px; 
 }
+
+.port a {
+    color: #D6E0E2;
+    text-decoration:underline;
+}
+
+.port a:hover {
+    color: rgb(23, 243, 107); 
+    text-decoration: underline; 
+}
+
 
 #about{
     background-color:#F4EFE6
